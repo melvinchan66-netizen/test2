@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Melvin Portfolio</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <nav>My Logo</nav>
+
+  <section class="hero">
+    <img src="me.jpg" class="profile-img fade-in" alt="A pristine white Porsche sports car driving on a race track, with bold red and white striped barriers visible along the asphalt. The car features distinctive circular LED headlights and ventilation openings on the hood. Rolling green hills and cloudy sky create a dramatic backdrop. The scene conveys speed, precision, and automotive excellence.">
+    <h1 class="fade-in">Melvin Chan</h1>
+    <p class="fade-in-delay">Future Developer</p>
+    <a href="#about" class="btn-primary fade-in-btn">explore my work</a>
+  </section>
+
+  <section id="about" class="about-section">
+    <section id="projects" class="project-selection">
+      <div class="container">
+        <h2>my projects</h2>
+        <div class="project-grid">
+          <div class="project-card fade-in">
+            <div class="project-img">project 1</div>
+            <div class="project-info">
+              <h3>coffee shop website</h3>
+              <p>a simple lnding page for a local cafe</p>            </div>
+          </div>
+        </div> 
+        <div class="project-card fade-in-delay">
+          <div class="project-img">project 2</div>
+          <div class="project-info">
+            <h3>task manager App</h3>
+            <p>a javascript tool to keep track of daily goals</p>
+
+          </div>
+        </div>       
+        </h2>
+      </div>
+    </section>
+    <div class="container">
+    <h2>About Me</h2>
+    <p>I am learning coding</p>
+    </div>
+
+    </section>
+
+  <footer>
+    <p>© 2026 Melvin Chan</p>
+    <section id="contact" class="contact-swection"
+    <div class="container">
+      <h2>contact me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">send message</button>
+      </form>
+    </div>
+    </section>
+  </footer>
+  <script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      alert("Thank you for your message!");
+      form.reset();
+
+    });
+    const btn = documents.queryselector('.btn-primary');
+    btn.addEventListner('mousedown', () => {
+      btn.style.transform = 'scale(0.95)';
+    });
+    btn.addEventListner('mouseup', () => {
+      btn.style.transform =scale(1);
+    
+    });
+  </script>
+</body>
+</html>
+
+
+
